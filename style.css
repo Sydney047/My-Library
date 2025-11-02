@@ -1,0 +1,57 @@
+:root {
+    background-color: #038262;
+}
+.container {
+    display: grid;
+    grid-template: 10ch 1fr / repeat(4, 1fr); 
+    grid-gap: 10ch;
+    grid-auto-rows: 1fr;
+}
+.heading {
+    grid-column: 1/-1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3ch;
+    width: 80%;
+}
+button {
+    width: 15ch;
+    border: none;
+    border-radius: .45rem;
+    padding: .4rem;
+}
+.cards {
+    grid-area: 2/ 1/-1/-1;
+    display: grid;
+    grid-template: 35vh / repeat(3, 1fr) ;
+    grid-gap: 4ch;
+    padding: 3ch;
+}
+.cards > div {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 1rem;
+    border: none;
+    border-radius: .45rem;
+    padding: 1rem;
+    color: #fffcdc;
+    background-color: #6b8c89;
+    opacity: .9;
+}
+.cards > div > h3 {
+    position: relative;
+    left: 5ch;
+    flex-basis: 90%;
+    color: #f2ede7;
+}
+.cards > div > button {
+    flex-basis: 200px;
+    background-color: #8eb69b;
+}
